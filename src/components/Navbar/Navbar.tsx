@@ -1,3 +1,9 @@
+import HamburgerMenu from "./HamburgerMenu/HamburgerMenu";
+
 export default function Navbar() {
-  return <nav>This is my navbar</nav>;
+  return (
+    <nav className="absolute top-0 flex">
+      <HamburgerMenu />
+    </nav>
+  );
 }
