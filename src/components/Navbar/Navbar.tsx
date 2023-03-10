@@ -1,16 +1,13 @@
-import BookingButton from "./BookingButton/BookingButton";
-import HamburgerMenu from "./HamburgerMenu/HamburgerMenu";
-import Logo from "./Logo/Logo";
+import NavbarBody from "./NavbarBody/NavbarBody";
+import NavbarHeader from "./NavbarHeader/NavbarHeader";
 
 export default function Navbar() {
   return (
     <>
-      <nav className="fixed top-0 flex justify-between h-20 w-full border-b bg-white">
-        <HamburgerMenu />
-        {/* <Search /> */}
-        <Logo />
-        <BookingButton />
-      </nav>
+      {/* The body is before the header because I want the the body to appear behind the header.
+    I do not want to use Z-index as it can lead to unnecessary complications when scaling up. */}
+      <NavbarBody />
+      <NavbarHeader />
     </>
   );
 }
