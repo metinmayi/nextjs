@@ -1,10 +1,8 @@
-import NavbarContent from "./NavbarContent/NavbarContent";
 import { toggleNavbarContentVisibility } from "./toggleNavbarContentVisibility.js";
 
 export default function HamburgerMenu() {
   return (
     <>
-      <NavbarContent />
       <div
         className="flex grow flex-col justify-center pl-5 gap-1"
         onClick={toggleNavbarContentVisibility}>
