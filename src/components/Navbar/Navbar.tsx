@@ -5,7 +5,7 @@ import Logo from "./Logo/Logo";
 export default function Navbar() {
   return (
     <>
-      <nav className="fixed top-0 flex justify-between h-20 w-full border-b bg-red-900">
+      <nav className="fixed top-0 flex justify-between h-20 w-full border-b bg-white">
         <HamburgerMenu />
         {/* <Search /> */}
         <Logo />
